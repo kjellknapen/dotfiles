@@ -67,6 +67,9 @@ alias sudo='sudo '
 # Scape webpage
 alias scrape="scrapeUrl"
 
-# Switch NPM
-alias npmnpm="npm config set registry https://registry.npmjs.org"
-alias npmspatie="npm config set registry https://npm.spatie.be"
+# Marbles servers
+alias php02="ssh root@php02.marblessite.be"
+alias php06="ssh root@php06.marblessite.be"
+alias php07="ssh root@php07.marblessite.be"
+alias php08="ssh root@php08.marblessite.be"
+alias php09="ssh root@php09.marblessite.be"

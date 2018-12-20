@@ -62,7 +62,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 echo 'Install node'
 echo '-----------'
-brew install node@8
+brew install node@11
 
 echo 'Install bat'
 echo '-----------'
@@ -100,10 +100,6 @@ echo 'Install ack'
 echo '-----------'
 brew install ack
 
-echo 'Install doctl'
-echo '-------------'
-brew install doctl
-
 echo 'Install brew-cask'
 echo '-----------------'
 brew tap caskroom/cask
@@ -139,10 +135,6 @@ echo 'Install redis'
 echo '-------------'
 pecl install redis
 
-echo 'Install laravel envoy'
-echo '---------------------'
-composer global require "laravel/envoy=~1.0"
-
 echo 'Install php-cs-fixer'
 echo '--------------------'
 composer global require friendsofphp/php-cs-fixer
@@ -155,23 +147,14 @@ echo 'Install mixed-content-scanner-cli'
 echo '---------------------------------'
 composer global require spatie/mixed-content-scanner-cli
 
-echo 'Install laravel valet'
+echo 'Install Valet Plus'
 echo '---------------------'
-composer global require laravel/valet
+composer global require weprovide/valet-plus
 valet install
-
-echo 'Install mysql'
-echo '-------------'
-brew install mysql@5.7
-brew services start mysql@5.7
 
 echo 'Install yarn'
 echo '------------'
-brew install yarn
-
-echo 'Install ghostscript'
-echo '-------------------'
-brew install ghostscript
+brew install yarn --without-node
 
 echo 'Install mackup'
 echo '--------------'
