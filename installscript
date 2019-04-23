@@ -142,14 +142,14 @@ echo 'Install mixed-content-scanner-cli'
 echo '---------------------------------'
 composer global require spatie/mixed-content-scanner-cli
 
-echo 'Install Valet Plus'
+echo 'Install Valet'
 echo '---------------------'
-composer global require weprovide/valet-plus
+composer global require laravel/valet
 valet install
 
 echo 'Install yarn'
 echo '------------'
-brew install yarn --without-node
+brew install yarn
 
 echo 'Install mackup'
 echo '--------------'
