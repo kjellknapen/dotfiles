@@ -14,4 +14,4 @@ The bootstrap script can be run by cd-ing into the `.dotfiles` directory and per
 
 Feel free to create an issue on this repo if you have any questions about them.
 
-![screenshot](https://ibb.co/CmTZBQJ)
+![screenshot](https://i.ibb.co/1rsst4b/Oxide-Terminal.png)
