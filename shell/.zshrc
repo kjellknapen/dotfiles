@@ -12,6 +12,15 @@ ZSH_THEME="oxide"
 # Hide username in prompt
 DEFAULT_USER=`whoami`
 
+# dircolors.
+if [ -x "$(command -v dircolors)" ]; then
+    eval "$(dircolors -b ~/.dircolors)"
+fi
+
+if [ -f ~/.dotfiles/bin/base16-oxide ]; then
+    source ~/.dotfiles/bin/base16-oxide
+fi
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
