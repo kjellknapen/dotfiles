@@ -72,9 +72,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Alias hub to git
 eval "$(hub alias -s)"
 
-alias darknet="ssh root@142.93.130.220"
-alias darknet-deploy="ssh deploybot@142.93.130.220"
-
 # Sudoless npm https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"

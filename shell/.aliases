@@ -71,3 +71,7 @@ alias php06="ssh root@php06.marblessite.be"
 alias php07="ssh root@php07.marblessite.be"
 alias php08="ssh root@php08.marblessite.be"
 alias php09="ssh root@php09.marblessite.be"
+
+# My Server
+alias darknet="ssh root@142.93.130.220"
+alias darknet-deploy="ssh deploybot@142.93.130.220"
