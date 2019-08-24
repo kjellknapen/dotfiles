@@ -78,7 +78,6 @@ unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 export PATH=$HOME/.dotfiles/bin:$PATH
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 # Import ssh keys in keychain
 ssh-add -A 2>/dev/null;
@@ -87,7 +86,7 @@ ssh-add -A 2>/dev/null;
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Enable autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Extra paths
 export PATH=/usr/local/bin:$PATH
