@@ -18,6 +18,10 @@ git config --global core.excludesfile $HOME/.global-gitignore
 rm $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell-linux/.zshrc $HOME/.zshrc
 
+# Symlink dircolors prefs
+rm $HOME/.dircolors
+ln -s $HOME/.dotfiles/shell-linux/.dircolors $HOME/.dircolors
+
 # Symlink vim prefs
 rm $HOME/.vimrc
 ln -s $HOME/.dotfiles/shell-linux/.vimrc $HOME/.vimrc
@@ -59,10 +63,6 @@ echo 'Install ncdu'
 echo '------------'
 sudo apt-get install ncdu
 
-echo 'Install hub'
-echo '-----------'
-sudo apt-get install hub
-
 echo 'Install ack'
 echo '-----------'
 sudo apt-get install ack
@@ -70,10 +70,6 @@ sudo apt-get install ack
 echo 'Install vim'
 echo '-----------'
 sudo apt-get install vim
-
-echo 'Install some nice quicklook plugins'
-echo '-----------------------------------'
-sudo apt-get install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
 
 echo 'Install apache'
 echo '-----------'
@@ -142,9 +138,6 @@ echo 'Install yarn'
 echo '------------'
 sudo apt-get install yarn
 
-echo 'Install zsh-autosuggestions'
-echo '---------------------------'
-sudo apt-get install zsh-autosuggestions
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
