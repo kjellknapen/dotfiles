@@ -10,6 +10,8 @@ sudo apt-get install zsh
 rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
+chsh -s /usr/bin/zsh
+
 # Add global gitignore
 ln -s $HOME/.dotfiles/shell-linux/.global-gitignore $HOME/.global-gitignore
 git config --global core.excludesfile $HOME/.global-gitignore
@@ -144,16 +146,13 @@ sudo apt-get install zsh-autosuggestions
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
-echo 'Things to do to make the agnoster terminal theme work:'
-echo '1. Install hack font included in ~/.dotfiles/misc https://gist.github.com/qrush/1595572/raw/Menlo-Powerline.otf'
-echo '2. Install patched solarized theme included in ~/.dotfiles/misc'
+echo 'Things to do to make the oxide terminal theme work:'
+echo '1. Install hack font included in ~/.dotfiles/misc'
 
 echo '++++++++++++++++++++++++++++++'
 echo 'Some optional tidbits'
 
-echo '1. Make sure dropbox is running first. If you have not backed up via Mackup yet, then run `mackup backup` to symlink preferences for a wide collection of apps to your dropbox. If you already had a backup via mackup run `mackup restore` You'\''ll find more info on Mackup here: https://github.com/lra/mackup.'
-echo '2. Set some sensible os x defaults by running: $HOME/.dotfiles/macos/set-defaults.sh'
-echo '3. Make a .dotfiles-custom/shell-linux/.aliases for your personal commands'
+echo '1. Make a .dotfiles-custom/shell-linux/.aliases for your personal commands'
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
