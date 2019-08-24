@@ -98,25 +98,29 @@ else
     sudo mv -f composer.phar /usr/local/bin/composer
 fi
 
+echo 'Update pecl'
+echo '-------------------'
+sudo pecl update-channel pecl.php.net
+
 echo 'Install imagemagick'
 echo '-------------------'
 sudo apt-get install imagemagick
 
 echo 'Install imagick'
 echo '---------------'
-pecl install imagick
+sudo pecl install imagick
 
 echo 'Install memcached'
 echo '-----------------'
-pecl install memcached
+sudo pecl install memcached
 
 echo 'Install xdebug'
 echo '--------------'
-pecl install xdebug
+sudo pecl install xdebug
 
 echo 'Install redis'
 echo '-------------'
-pecl install redis
+sudo pecl install redis
 
 echo 'Install php-cs-fixer'
 echo '--------------------'
