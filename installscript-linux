@@ -6,6 +6,7 @@ touch $HOME/.hushlogin
 # Install zsh
 echo 'Install oh-my-zsh'
 echo '-----------------'
+sudo apt-get install zsh
 rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
@@ -80,6 +81,10 @@ sudo apt-get install hub
 echo 'Install ack'
 echo '-----------'
 sudo apt-get install ack
+
+echo 'Install vim'
+echo '-----------'
+sudo apt-get install vim
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
