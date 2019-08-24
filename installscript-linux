@@ -6,7 +6,7 @@ touch $HOME/.hushlogin
 # Install zsh
 echo 'Install oh-my-zsh'
 echo '-----------------'
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
@@ -46,40 +46,40 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 echo 'Install node'
 echo '-----------'
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install nodejs
+sudo apt-get install nodejs -y
 
 echo 'Install pkg-config'
 echo '------------------'
-sudo apt-get install pkg-config
+sudo apt-get install pkg-config -y
 
 echo 'Install wget'
 echo '------------'
-sudo apt-get install wget
+sudo apt-get install wget -y
 
 echo 'Install httpie'
 echo '--------------'
-sudo apt-get install httpie
+sudo apt-get install httpie -y
 
 echo 'Install ncdu'
 echo '------------'
-sudo apt-get install ncdu
+sudo apt-get install ncdu -y
 
 echo 'Install ack'
 echo '-----------'
-sudo apt-get install ack
+sudo apt-get install ack -y
 
 echo 'Install vim'
 echo '-----------'
-sudo apt-get install vim
+sudo apt-get install vim -y
 
 echo 'Install apache'
 echo '-----------'
-sudo apt-get install apache2
+sudo apt-get install apache2 -y
 
 echo 'Install php'
 echo '-----------'
-sudo apt-get install php
-sudo apt-get install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
+sudo apt-get install php -y
+sudo apt-get install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php -y
 
 echo 'Install composer'
 echo '----------------'
@@ -105,7 +105,7 @@ sudo pecl channel-update pecl.php.net
 
 echo 'Install imagemagick'
 echo '-------------------'
-sudo apt-get install imagemagick
+sudo apt-get install imagemagick -y
 
 echo 'Install imagick'
 echo '---------------'
@@ -141,7 +141,7 @@ composer global require spatie/mixed-content-scanner-cli
 
 echo 'Install yarn'
 echo '------------'
-sudo apt-get install yarn
+sudo apt-get install yarn -y
 
 
 echo '++++++++++++++++++++++++++++++'
