@@ -33,7 +33,7 @@ cd ~/.dotfiles/shell-linux
 chmod +x z.sh
 
 # Set new shell
-chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh root
 
 echo 'Install composer'
 echo '----------------'
