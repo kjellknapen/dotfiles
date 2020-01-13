@@ -72,6 +72,14 @@ alias php07="ssh root@php07.marblessite.be"
 alias php08="ssh root@php08.marblessite.be"
 alias php09="ssh root@php09.marblessite.be"
 
+# Reseller servers
+alias techopolis="ssh technopolisbe8742@ssh019.webhosting.be"
+alias stek="ssh stektechnopolisbe@ssh043.webhosting.be"
+alias email-validatie="ssh email-validatietechnopolisbe@ssh043.webhosting.be"
+alias bruvo="ssh bruvobe@ssh018.webhosting.be"
+alias destudio="ssh destudiocom@ssh021.webhosting.be"
+alias loopd="ssh loopdbe@ssh042.webhosting.be"
+
 # My Server
 alias darknet="ssh root@142.93.130.220"
 alias darknet-deploy="ssh deploybot@142.93.130.220"
