@@ -141,6 +141,11 @@ echo 'Install mixed-content-scanner-cli'
 echo '---------------------------------'
 composer global require spatie/mixed-content-scanner-cli
 
+echo 'Install Valet Linux'
+echo '---------------------------------'
+composer global require cpriego/valet-linux
+valet install
+
 echo 'Install yarn'
 echo '------------'
 npm i -g yarn
