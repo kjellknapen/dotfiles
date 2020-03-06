@@ -64,7 +64,7 @@ done
 unset file
 
 # Load rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 export PATH="$PATH:$HOME/.rvm/bin"
 . $HOME/.dotfiles/shell-linux/z.sh
@@ -86,7 +86,7 @@ ssh-add -A 2>/dev/null;
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Enable autosuggestions
-source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Extra paths
 export PATH=/usr/local/bin:$PATH
