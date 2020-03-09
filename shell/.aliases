@@ -73,7 +73,7 @@ alias php08="ssh root@php08.marblessite.be"
 alias php09="ssh root@php09.marblessite.be"
 
 # Reseller servers
-alias techopolis="ssh technopolisbe8742@ssh019.webhosting.be"
+alias technopolis="ssh technopolisbe8742@ssh019.webhosting.be"
 alias stek="ssh stektechnopolisbe@ssh043.webhosting.be"
 alias email-validatie="ssh email-validatietechnopolisbe@ssh043.webhosting.be"
 alias bruvo="ssh bruvobe@ssh018.webhosting.be"

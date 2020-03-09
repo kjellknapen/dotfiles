@@ -7,7 +7,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/misc/oh-my-zsh-custom
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="oxide"
+ZSH_THEME="typewritten"
 
 # Hide username in prompt
 DEFAULT_USER=`whoami`
@@ -96,5 +96,4 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
