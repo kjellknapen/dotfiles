@@ -60,11 +60,11 @@ echo 'Install homebrew'
 echo '----------------'
 echo install homebrew
 sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo 'Install node'
 echo '-----------'
-brew install node@11
+brew install node@12
 
 echo 'Install pkg-config'
 echo '------------------'
@@ -90,21 +90,18 @@ echo 'Install ack'
 echo '-----------'
 brew install ack
 
-echo 'Install brew-cask'
-echo '-----------------'
-brew tap caskroom/cask
-brew install brew-cask
-
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
 brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
 
 echo 'Install php'
 echo '-----------'
+brew install php
 brew install php@7.0
 brew install php@7.1
 brew install php@7.2
 brew install php@7.3
+brew link php@7.3
 
 echo 'Install imagemagick'
 echo '-------------------'
