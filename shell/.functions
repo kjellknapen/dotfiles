@@ -20,6 +20,11 @@ function mkd() {
    mkdir -p "$@" && cd "$@"
 }
 
+nitro-craft ()
+{
+   multipass exec nitro-dev -- bash -c "sites/$1/craft $2"
+}
+
 # Open a valet project in the browser
 
 # Start an HTTP server from a directory, optionally specifying the port
