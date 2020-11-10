@@ -66,3 +66,5 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# Set typewritten ZSH as a prompt
