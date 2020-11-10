@@ -9,8 +9,15 @@ echo 'Install oh-my-zsh'
 echo '-----------------'
 sudo apt-get install zsh -y
 rm -rf $HOME/.oh-my-zsh
-curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+curl -L https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/zsh-autosuggestions
+
+
+for file in {agnoster,oxide,pi,typewritten}.zsh-theme; do
+    rm $HOME/.oh-my-zsh/themes/$file
+	ln -s $HOME/.dotfiles/misc/oh-my-zsh-custom/themes/$file $HOME/.oh-my-zsh/themes/$file
+done
+
 
 # Add global gitignore
 ln -s $HOME/.dotfiles/shell-linux/.global-gitignore $HOME/.global-gitignore
@@ -18,7 +25,7 @@ git config --global core.excludesfile $HOME/.global-gitignore
 
 # Symlink zsh prefs
 rm $HOME/.zshrc
-ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell-linux/.zshrc $HOME/.zshrc
 
 # Symlink dircolors prefs
 rm $HOME/.dircolors
@@ -43,45 +50,41 @@ chsh -s /usr/bin/zsh
 
 echo 'Apt-get update'
 echo '----------------'
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 
 echo 'Install node'
 echo '-----------'
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install nodejs -y
+sudo apt install nodejs -y
 
 echo 'Install pkg-config'
 echo '------------------'
-sudo apt-get install pkg-config -y
+sudo apt install pkg-config -y
 
 echo 'Install wget'
 echo '------------'
-sudo apt-get install wget -y
+sudo apt install wget -y
 
 echo 'Install httpie'
 echo '--------------'
-sudo apt-get install httpie -y
+sudo apt install httpie -y
 
 echo 'Install ncdu'
 echo '------------'
-sudo apt-get install ncdu -y
+sudo apt install ncdu -y
 
 echo 'Install ack'
 echo '-----------'
-sudo apt-get install ack -y
+sudo apt install ack -y
 
 echo 'Install vim'
 echo '-----------'
-sudo apt-get install vim -y
-
-echo 'Install apache'
-echo '-----------'
-sudo apt-get install apache2 -y
+sudo apt install vim -y
 
 echo 'Install php'
 echo '-----------'
-sudo apt-get install php -y
-sudo apt-get install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php -y
+sudo apt install php -y
+sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php -y
 
 echo 'Install composer'
 echo '----------------'
@@ -131,7 +134,7 @@ composer global require friendsofphp/php-cs-fixer
 
 echo 'Install laravel envoy'
 echo '---------------------'
-composer global require "laravel/envoy=~1.0"
+composer global require "laravel/envoy"
 
 echo 'Install phpunit-watcher'
 echo '-----------------------'
@@ -143,12 +146,12 @@ composer global require spatie/mixed-content-scanner-cli
 
 echo 'Install Valet Linux'
 echo '---------------------------------'
-composer global require cpriego/valet-linux
-valet install
+#composer global require cpriego/valet-linux
+#valet install
 
 echo 'Install yarn'
 echo '------------'
-npm i -g yarn
+#npm i -g yarn
 
 
 echo '++++++++++++++++++++++++++++++'
