@@ -30,10 +30,6 @@ ln -s $HOME/.dotfiles/shell/.yarnrc $HOME/.yarnrc
 # Symlink the Mackup config
 ln -s $HOME/.dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
 
-# Fix missing font characters (see https://github.com/robbyrussell/oh-my-zsh/issues/1906)
-cd ~/.oh-my-zsh/themes/
-git checkout d6a36b1 agnoster.zsh-theme
-
 # Activate z
 cd ~/.dotfiles/shell
 chmod +x z.sh
@@ -101,7 +97,7 @@ brew install php@7.0
 brew install php@7.1
 brew install php@7.2
 brew install php@7.3
-brew link php@7.3
+brew link php
 
 echo 'Install imagemagick'
 echo '-------------------'
@@ -138,11 +134,6 @@ composer global require spatie/phpunit-watcher
 echo 'Install mixed-content-scanner-cli'
 echo '---------------------------------'
 composer global require spatie/mixed-content-scanner-cli
-
-echo 'Install Valet'
-echo '---------------------'
-composer global require laravel/valet
-valet install
 
 echo 'Install yarn'
 echo '------------'
