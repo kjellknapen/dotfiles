@@ -10,14 +10,15 @@ echo '-----------------'
 sudo apt-get install zsh -y
 rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/zsh-autosuggestions
 
 # Add global gitignore
-ln -s $HOME/.dotfiles/shell-linux/.global-gitignore $HOME/.global-gitignore
+ln -s $HOME/.dotfiles/shell/.global-gitignore $HOME/.global-gitignore
 git config --global core.excludesfile $HOME/.global-gitignore
 
 # Symlink zsh prefs
 rm $HOME/.zshrc
-ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell-linux/.zshrc $HOME/.zshrc
 
 # Symlink dircolors prefs
 rm $HOME/.dircolors
